@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Пункт 4.2</title>
+
+
+
+
+   <style>
+
+
+
+    body {
+      margin: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      height: 75px;
+    }
+
+    header {
+      display: block;
+      width: 100%;
+      height: 400px;
+      background-image: url(images/header_image.jpg);
+      background-size: cover;
+
+      }
+
+
+    section {
+        display: flex;
+        height: 500px;
+        margin: 75px 100px;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+    .prefooter {
+        height: 40px;
+        background-color: silver;
+      }
+
+    footer {
+        height: 100px;
+        background-color: black;
+      }
+
+    nav > h2 {
+        height: 100%;
+        box-sizing: border-box;
+        font-size: 35px;
+        padding-left: 10px;
+        padding-top: 10px;
+        float: left;
+      }
+
+    nav > ul {
+        display: flex;
+        list-style: none;
+        height: 100%;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+
+      }
+
+    nav > ul > li {
+
+        font-size: 20px;
+        display: inline;
+
+
+
+      }
+
+    .Take-action {
+        padding: 10px;
+        border: solid 2px;
+        border-radius: 25px;
+      }
+
+    .Take-action:hover {
+        cursor: pointer;
+      }
+
+    header > h3 {
+
+        width: 100%;
+        font-size: 300%;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+
+        color: white;
+        text-shadow:
+        -0   -2px 0   #000000,
+         0   -2px 0   #000000,
+        -0    2px 0   #000000,
+         0    2px 0   #000000,
+        -2px -0   0   #000000,
+         2px -0   0   #000000,
+        -2px  0   0   #000000,
+         2px  0   0   #000000,
+        -1px -2px 0   #000000,
+         1px -2px 0   #000000,
+        -1px  2px 0   #000000,
+         1px  2px 0   #000000,
+        -2px -1px 0   #000000,
+         2px -1px 0   #000000,
+        -2px  1px 0   #000000,
+         2px  1px 0   #000000,
+        -2px -2px 0   #000000,
+         2px -2px 0   #000000,
+        -2px  2px 0   #000000,
+         2px  2px 0   #000000,
+        -2px -2px 0   #000000,
+         2px -2px 0   #000000,
+        -2px  2px 0   #000000,
+         2px  2px 0   #000000;
+
+      }
+
+
+
+    header > h5 {
+        color: white;
+        position: relative;
+        background-color: #2DC190;
+        display: table;
+        padding: 10px;
+        border: solid 2px #2DC190;
+        border-color: none;
+        border-radius: 25px;
+        margin: auto;
+        top: 130px;
+
+
+
+
+      }
+
+    a {
+        text-decoration: none;
+        color: black;
+      }
+
+    header > h5 > a {
+        color: white;
+      }
+
+    header > h5:hover {
+        background-color: skyblue;
+        cursor: pointer;
+        border: solid 2px black;
+      }
+
+    header > h5:hover a {
+        color: black;
+      }
+
+    .paragraph {
+        height: 200px;
+        width: 50%;
+        margin-top: 75px;
+        margin-left: 25%;
+        margin-bottom: 75px;
+        text-align: center;
+      }
+
+
+    .heading {
+        display: block;
+        font-size: 30px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+      }
+
+    .text {
+        line-height: 160%;
+        margin: 0 auto;
+      }
+
+    #flex-item {
+        height: 400px;
+        width: 48%;
+
+
+      }
+
+    .flex-item1 > .image {
+        width: 70%;
+        height: 70%;
+        padding-left: 27%;
+        background-image: url(images/first_pic.jpg);
+        background-size: cover;
+      }
+
+    .flex-item2 > .image {
+        width: 70%;
+        height: 70%;
+        padding-left: 27%;
+        background-image: url(images/second_pic.jpg);
+        background-size: cover;
+      }
+
+    #flex-item > h4 {
+        text-align: center;
+        font-size: 25px;
+        color: #66FF66;
+        font-weight: 400;
+        padding-top: 10px;
+
+      }
+
+    #flex-item > p {
+        text-align: center;
+        line-height: 160%;
+        margin: 0;
+        padding-top: 10px;
+      }
+
+    .prefooter > p {
+        margin: 0;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+    footer > p {
+        margin: 0;
+        color: grey;
+        text-align: center;
+        padding-top: 40px;
+      }
+
+
+
+    
+
+   </style>
+
+
+
+
+
+
+
+  </head>
+
+
+
+  <body>
+
+    <nav>
+
+      <h2>Travel Portal</h2>
+
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">EVENTS</a></li>
+        <li class="Take-action"><a href="">TAKE ACTION</a></li>
+      </ul>
+
+    </nav>
+
+    <header>
+
+      <h3>We are all together</h3>
+      <h5><a href="">WATCH NOW</a></h5>
+
+    </header>
+
+      <p class="paragraph">
+
+        <span class="heading">Experience Europe through our stories.</span>
+
+        <span class="text">
+          Our travel agency offers the largest selection of tours for the whole Europe. We provide a superior customer service experience delivered with integrity
+          and an attitude that provides simplicity and comfort. Our long-standing partnerships with the best hotels, restaurants and attractions will ensure your group
+          has a worldclass experience. We’ll take the stress out of planning a life-changing tour for your group or for your individual travels. Partner with us to ensure your tour
+          experience is the best it can be. We are the leading tour operator on Ukrainian tourist Incoming-Market.
+          Our friendly and professional guides will show you the best tourist sights in Europe.
+          We take care of the best travel experiences of our customers from all over the World.
+          Travel to Europe and enjoy a perfect Holiday.</span>
+      </p>
+
+    <section>
+      <div class="flex-item1" id="flex-item">
+        <div class="image"></div>
+        <h4>ABOUT</h4>
+        <p>
+          Travel is the main thing you purchase that makes you more extravagant.
+           We swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly.
+        </p>
+      </div>
+
+      <div class="flex-item2" id="flex-item">
+        <div class="image"></div>
+        <h4>TAKE ACTION</h4>
+        <p>
+          The world is closer than ever before and it’s waiting to be explored.
+          From European villages and architecture from the Middle-ages to Literary meccas,
+          shops and restaurants, we’re here to help you create the perfect vacation.
+        </p>
+      </div>
+    </section>
+
+    <div class="prefooter">
+      <p>WANT TO KNOW MORE ABOUT EUROPE?</p>
+    </div>
+
+    <footer>
+      <p>2020 @ Europe Travel. ALL Rights Reserved</p>
+    </footer>
+
+  </body>
+
+</html>

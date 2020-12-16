@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Пункт 4.3</title>
+
+    <style>
+
+      .parallax {
+        background-image: url(images/mountains.jpg);
+        height: 3000px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      p {
+        margin: 0;
+        height: 150px;
+        background-color: skyblue;
+        font-size: 50px;
+        text-align: center;
+        position: relative;
+        top: 1300px;
+
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .parallax {
+          background-attachment: scroll;
+        }
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <div class="parallax">
+      <p>Test paragraph</p>
+    </div>
+
+  </body>
+</html>

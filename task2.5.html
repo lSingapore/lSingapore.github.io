@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Пункт 2.5</title>
+
+<style>
+
+body {
+  white-space: nowrap;
+}
+
+  div {
+    background-color: skyblue;
+    height: 150px;
+    width: 100px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #eeeff2;
+    position: relative;
+
+
+  }
+
+  .line {
+    border-style: none;
+    border-left-style: dotted;
+    border-left-width: 10px;
+    border-color: #D0D0FF;
+    margin: 0;
+  }
+
+  h2 {
+    position: absolute;
+    margin: 0;
+    left: 10px;
+    top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+  }
+
+  div:hover {
+    background-color: yellow;
+    cursor: pointer;
+  }
+
+  div:hover h2 {
+    color: goldenrod;
+    cursor: pointer;
+  }
+
+  .lastBox {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+
+
+
+</style>
+
+  </head>
+
+  <body>
+
+  <div>
+    <div class="line">
+      <h2>А</h2>
+    </div>
+  </div>
+
+  <div>
+    <div class="line">
+    <h2>B</h2>
+    </div>
+  </div>
+
+  <div>
+    <div class="line">
+      <h2>C</h2>
+    </div>
+  </div>
+
+  <div>
+    <div class="line">
+      <h2>D</h2>
+    </div>
+  </div>
+
+  <div>
+    <div class="line">
+      <h2>E</h2>
+    </div>
+  </div>
+
+  <div class="lastBox">
+    <div class="line">
+      <h2>F</h2>
+    </div>
+  </div>
+
+  </body>
+
+</html>
